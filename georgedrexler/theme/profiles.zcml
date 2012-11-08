@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="georgedrexler.theme">
+
+  <genericsetup:registerProfile
+      name="default"
+      title="George Drexler Theme"
+      directory="profiles/default"
+      description='Extension profile for the "George Drexler Theme" Plone theme.'
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      />
+
+  <genericsetup:importStep
+      name="georgedrexler.theme.various"
+      title="George Drexler Theme: miscellaneous import steps"
+      description="Various import steps that are not handled by GS import/export handlers."
+      handler="georgedrexler.theme.setuphandlers.setupVarious">
+    <depends name="skins"/>
+  </genericsetup:importStep>
+
+</configure>
