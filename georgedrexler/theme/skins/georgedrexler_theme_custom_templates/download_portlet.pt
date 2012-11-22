@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title tal:content="template/title">Join us</title>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  </head>
+  <body>
+    
+    <dl metal:define-macro="portlet" class="portlet portletClassic portlet-download">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span>
+           Download
+        </span>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="border_arround">
+	<div xmlns="http://www.w3.org/1999/xhtml" style="font-size:90%;">
+	  <p>Find out more about joining the College</p>
+	  <ul>
+	    <li>Test </li>
+        <li>Application</li>
+       
+		</ul>
+	
+	</div>        
+    </dd>
+     
+    </dl>
+
+  </body>
+</html>

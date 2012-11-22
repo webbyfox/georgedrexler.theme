@@ -49,5 +49,31 @@
       directory="stylesheets"
       layer=".interfaces.IThemeSpecific"
       />
+  
+  
+  <browser:resourceDirectory
+      name="georgedrexler.theme.templates"
+      directory="templates"
+      layer=".interfaces.IThemeSpecific"
+      />
 
+     <!-- The new Footer -->
+    <browser:viewlet
+        name="georgedrexler.footer"
+        manager="plone.app.layout.viewlets.interfaces.IPortalFooter"
+        layer=".interfaces.IThemeSpecific"
+        template="templates/footer.pt"
+        permission="zope2.View"
+        />
+    
+     <!-- The search box -->
+    <browser:viewlet
+        name="georgedrexler.searchbox"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.DrexlerSearchBoxViewlet"
+        layer=".interfaces.IThemeSpecific"
+        permission="zope2.View"
+        />
+
+ 
 </configure>

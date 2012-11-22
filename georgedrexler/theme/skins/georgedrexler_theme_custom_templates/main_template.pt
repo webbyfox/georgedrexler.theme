@@ -80,7 +80,7 @@
                     <div metal:use-macro="context/global_statusmessage/macros/portal_message">
                      Status message
                     </div>
-
+ 
                     <metal:slot define-slot="body">
                         <div id="content">
 
@@ -168,7 +168,7 @@
                 <img tal:attributes="src string:${portal_url}/spinner.gif" alt="" />
             </div>
         </div>
-    </div>
+    </div> 
 
 
 

@@ -1,0 +1,8 @@
+<div metal:define-macro="portal_footer"
+     i18n:domain="plone"
+     id="portal-footer">
+          <p>&copy; 2012 | George Drexler Foundation, 35-43 Lincoln's  Inn Fields, London WC2A 3PE
+<br>Registered Charity no: 313278
+          </p>
+
+</div>
