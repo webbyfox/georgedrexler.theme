@@ -33,6 +33,6 @@ setup(name='georgedrexler.theme',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
+      setup_requires=[""],
       paster_plugins=["ZopeSkel"],
       )
